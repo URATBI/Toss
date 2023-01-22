@@ -1,12 +1,7 @@
 body{
     background-color: rgb(241, 242, 244);
     display: grid;
-    gap: 1rm;
-    overflow-y: scroll;
-    padding-bottom: 164px;
-    padding-top: 20px;
-    flex-direction: column;
-    box-sizing: border-box;
+   
     
 
 }
