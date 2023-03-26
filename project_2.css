@@ -15,7 +15,7 @@ body{
     background-image:url("https://cdn.pixabay.com/photo/2015/10/29/14/38/web-1012467__340.jpg");
     background-size: cover;
     background-position: center;
-    overflow-x: hidden;
+    overflow: hidden;
     scroll-behavior: smooth;
 }
 li{
