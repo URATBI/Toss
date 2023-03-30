@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="project_1.css">
+    
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="loge"><a class="web" href="#">Web</a></div>
+            <ul class="links">
+                <li><a class="as" href="#">Home</a></li>
+                <li><a class="as" href="#about">About</a></li>
+                <li><a class="as" href="#Deepan">Deepan</a></li>
+                <li><a class="as" href="#kishore">Kishore</a></li>
+            </ul>
+            
+            <a href="#" class="action_btn">Get Login</a>
+           
+            <div class="toggle_btn">
+                
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown_menu ">
+                <li><a class="as" href="#">Home</a></li>
+                <li><a class="as" href="#about">About</a></li>
+                <li><a class="as" href="#Deepan">Deepan</a></li>
+                <li><a class="as" href="#kishore">Kishore</a></li>
+                <li><a  href="#" class="action_btnn">Get Login</a></li>
+
+            </div>
+        </div>
+    </header>
+    <script>
+         
+
+        const toggleBtn=document.querySelector('.toggle_btn');
+        const togglebtnIcon=document.querySelector('.toggle_btn i');
+        const dropdown_menu=document.querySelector('.dropdown_menu');
+
+        toggleBtn.onclick= function(){
+            dropdown_menu.classList.toggle('open')
+            const isopen=dropdown_menu.classList.contains('open')
+            togglebtnIcon.classList=isopen?'fa-solid fa-xmark':'fa-solid fa-bars'
+        }
+
+    </script>
+    <div class="about">
+        <div class="first" style="width: 100%;height: 1750px; background:linear-gradient(rgb(254, 114, 242),rgb(250, 54, 234),rgb(253, 43, 235),rgb(255, 0, 238));">
+            <div class="imgg">
+                <br><br>
+                <div class="wrapper">
+                    <span class="icon-close">
+                        <ion-icon name="close"></ion-icon>
+                    </span>
+                    <div class="form-box login">
+                        <h2>Login</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                <input type="email" required>
+                                <label >Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" required>
+                                <label >Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label ><input type="checkbox">Remember me</label>
+                                <a href="#">Forgot Password</a>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="login-register">
+                                <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-box register">
+                        <h2>Registration</h2>
+                        <form action="#">
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                                <input type="text" required>
+                                <label >Username</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                                <input type="email" required>
+                                <label >Email</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                                <input type="password" required>
+                                <label >Password</label>
+                            </div>
+                            <div class="remember-forgot">
+                                <label ><input type="checkbox">Agree to the terms & conditions</label>
+                                
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                            <div class="login-register">
+                                <p>Already have an account?<a href="#" class="login-link">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <br><br>
+            <div class="food">
+                <div class="food_list">
+                    <div class="circle">
+                        <img class="imgs" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" >
+                    </div>
+                    <div class="foodl"></div>
+                    <div class="circle">
+                        <img class="imgs" src="https://s1.1zoom.me/big0/588/The_second_dishes_Shrimp_Tomatoes_White_background_517162_1280x853.jpg" >
+                    </div>
+
+                </div>
+                
+                <div class="food_2list">
+                    <div class="circle ">
+                        <img class="imgs" src="https://media.istockphoto.com/id/1190330112/photo/fried-pork-and-vegetables-on-white-background.jpg?b=1&s=170667a&w=0&k=20&c=K_VDU6LQQQS0hsYXB8-b4ILTpfY_xFv0AXcwCpCAEqw=" >
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="healthy">
+                <div class="food_header">Food Shop</div><br>
+                <div class="define">
+                    <p>Healthy food refers to any type of food that provides essential nutrients to the body without having harmful effects on health. <br> foods are usually low in calories, high in fiber, vitamins, minerals, and other essential nutrients.</p>
+                </div>
+            </div><br><br>
+            <div class="lable">
+                <div class="bar_1"></div>
+                <div class="bar_2"></div>
+                <div class="bar_3">
+                    
+                </div>
+                <div class="bar_4"></div>
+            </div>
+        </div>
+    
+        <hr>
+        <div style="width: 100%;height: 550px; background-color: rgb(242, 236, 241);">
+            <br>
+            <div class="videos">
+                <div class="items">
+                    <video class="myvi" width="280" height="500" id="myvid_1"  loop muted >
+                        <source src="https://player.vimeo.com/external/425440187.sd.mp4?s=45335553c4f4eb6992b78839d2619649f6a81850&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+                <div class="items">
+                    <video class="myvi" width="270" height="500" id="myvid_2"   loop muted >
+                        <source src="https://player.vimeo.com/external/412306034.hd.mp4?s=67a93ffedd18e9e5c46fb05182ac8f4fc423c3cd&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+                <div class="items">
+                    <video class="myv" width="270" height="500"  id="myvid_3" style="margin-left: 6px;" loop muted >
+                        <source src="https://player.vimeo.com/external/376205800.hd.mp4?s=ca5b85ed3cea95e600dfa9d608ee623227dfe938&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+                <div class="items">
+                    <video class="myvi" width="270" height="500" id="myvid_4"  loop muted >
+                        <source src="https://player.vimeo.com/external/376213843.hd.mp4?s=7148001b7a4e50d0709edbb607662c1a4e363d54&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+                <div class="items">
+                    <video class="myvi" width="270" height="500" id="myvid_5"  loop muted >
+                        <source src="https://player.vimeo.com/external/376204686.hd.mp4?s=4014d6c498512ff5908a1a17dd05fd346954944f&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+                <div class="items">
+                    <video class="myvi" width="280" height="500" id="myvid_6"  loop muted >
+                        <source src="https://player.vimeo.com/external/376205878.hd.mp4?s=0a3f0c3e0586a9eeacaad46e1e7ead545077c93a&profile_id=174&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+                <div class="items">
+                    <video class="myvi" width="280" height="500" id="myvid_7"  loop muted >
+                        <source src="https://player.vimeo.com/external/371936510.sd.mp4?s=3be8f4ff5ac84b66f5591843fa8806f8e4327b91&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+           
+        </div>
+    
+    
+        <div style="width: 100%;height: 1500px; background-color: rgb(251, 66, 186);">
+            <div class="orders">
+                <div class="dise">
+                    <div class="images">
+                        
+                    </div>
+                    <div class="food_name_star">
+                        <div class="food_name">
+                            <h5>Arab Spice</h5>
+                        </div>
+                        <div class="star">
+                            <p>3.5</p>
+                            <ion-icon class="ic" name="star"></ion-icon>
+                        </div>
+
+                    </div>
+                    
+                    <div class="disc">
+                        <p>Chennai,Tamil Nadu...</p>
+                        <p class="rate">150 for one</p>
+
+                    </div>
+                    <div class="button">
+                        <a  href="#" class="action_btnn" style="background-color:rgb(109, 244, 25)  ; font-size: 15px;">Order Now</a>
+                        
+                    </div>
+                </div>
+                <div class="dise">
+                    <div class="images_1">
+                        
+                    </div>
+                    <div class="food_name_star">
+                        <div class="food_name">
+                            <h5>Fried Rice</h5>
+                        </div>
+                        <div class="star">
+                            <p>4.5</p>
+                            <ion-icon class="ic" name="star"></ion-icon>
+                        </div>
+
+                    </div>
+                    
+                    <div class="disc">
+                        <p>Cantonment,Trichy...</p>
+                        <p class="rate">100 for one</p>
+
+                    </div>
+                    <div class="button">
+                        <a  href="#" class="action_btnn" style="background-color:rgb(109, 244, 25)  ; font-size: 15px;">Order Now</a>
+                        
+                    </div>
+                </div>
+                <div class="dise">
+                    <div class="images_2">
+                        
+                    </div>
+                    <div class="food_name_star">
+                        <div class="food_name">
+                            <h5>Dose</h5>
+                        </div>
+                        <div class="star">
+                            <p>5.0</p>
+                            <ion-icon class="ic" name="star"></ion-icon>
+                        </div>
+
+                    </div>
+                    
+                    <div class="disc">
+                        <p>Cantonment,Trichy...</p>
+                        <p class="rate">100 for one</p>
+
+                    </div>
+                    <div class="button">
+                        <a  href="#" class="action_btnn" style="background-color:rgb(109, 244, 25)  ; font-size: 15px;">Order Now</a>
+                        
+                    </div>
+                </div>
+                <div class="dise">
+                    <div class="images_3">
+                        
+                    </div>
+                    <div class="food_name_star">
+                        <div class="food_name">
+                            <h5>Idli</h5>
+                        </div>
+                        <div class="star">
+                            <p>3.1</p>
+                            <ion-icon class="ic" name="star"></ion-icon>
+                        </div>
+
+                    </div>
+                    
+                    <div class="disc">
+                        <p>TVS Tolgate,Trichy...</p>
+                        <p class="rate">100 for one</p>
+
+                    </div>
+                    <div class="button">
+                        <a  href="#" class="action_btnn" style="background-color:rgb(109, 244, 25)  ; font-size: 15px;">Order Now</a>
+                        
+                    </div>
+                </div>
+             
+            </div>
+
+        </div>
+    </div>
+    <script src="project_1.js"></script>
+</body>
+</html>
