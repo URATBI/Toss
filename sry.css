@@ -7,7 +7,7 @@
 }
 .slids{
     display: flex;
-    
+    margin-top: 200px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
