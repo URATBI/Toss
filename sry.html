@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sry</title>
+    <link  rel="Website Icon" type="png" href="company_logo.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="sry.css">
+    <script>
+        
+        const scrollButton = document.getElementById('btn');
+        const scrollContainer = document.querySelector(".slide");
+        function scroll(){
+            scrollButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            alert("hi")
+            scrollContainer.scrollLeft+= 100;
+            
+            });
+        }
+        
+
+    </script>
+</head>
+<body>
+        <button class="but" id="btn" onclick="scroll()">
+            <ion-icon class="icon" name="arrow-forward-outline"></ion-icon>
+        </button>
+            
+        
+        <div class="msg">
+            <div class="slider_wrap">
+                <div class="slids">
+                    <div class="img" >
+
+                        <div class="image">
+                            <div class="sry">
+                                <h1>I'M &nbsp;&nbsp;Sorry</h1>
+                                <h4>Punna..</h4>
+                            </div>
+                            <div class="sry_img">
+                                <img src="sry.png" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="img">
+                        <div class="hole">
+                            <img class="imgg" src="https://content.123cards.com/ecards/2702/i-am-sorry-2702-image.png" alt="">
+                            
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
